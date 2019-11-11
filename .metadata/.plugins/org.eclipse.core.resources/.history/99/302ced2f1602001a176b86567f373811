@@ -1,0 +1,88 @@
+package Javabean;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class MainPeliculasBean {
+
+	public static void main(String[] args) {
+
+		PeliculaBean p1 = new PeliculaBean();
+		p1.setTitulo("La Grande Bellezza");
+		p1.setGenero("Comedia Dramatica");
+		p1.setDirector("Paolo Sorrentino");
+		p1.setPuntuacion(9);
+
+		System.out.println(p1.getTitulo());
+		System.out.println(p1.getGenero());
+		System.out.println(p1.getDirector());
+		System.out.println(p1.getPuntuacion());
+
+		ArrayList<PeliculaBean> listaPeliculas = new ArrayList<PeliculaBean>();
+		Scanner sc = new Scanner(System.in);
+		String opcion = "";
+		String titulo = "";
+		String genero = "";
+		String director = "";
+		double puntuacion = 0;
+
+		do {
+			System.out.println();
+			opcion = mostrarMenu(sc);
+			if (opcion.equals("1")) {
+				System.out.println();
+				titulo = leerPelicula("Titulo: ", sc);
+				genero = leerPelicula("Genero: ", sc);
+				director = leerPelicula("Director: ", sc);
+				String sPuntuacion = leerPelicula("Puntuacion: ", sc);
+				puntuacion = Double.parseDouble(sPuntuacion);
+				System.out.println();
+
+				Pelicula peli = new Pelicula(titulo, genero, director, puntuacion);
+				listaPeliculas.add(peli);
+				System.out.println();
+
+			} else if (opcion.equals("2")) {
+				System.out.println();
+				recorrerLista(listaPeliculas);
+			}
+		} while (!opcion.equals("0"));
+		System.out.println();
+
+		System.out.println("Muchas gracias por visitar nuestra Web de Peliculas");
+
+	}
+
+	public static String mostrarMenu(Scanner sc) {
+		System.out.println("Menu:");
+		System.out.println("1. Alta Pelicula");
+		System.out.println("2. Listar Peliculas");
+		System.out.println("0. Salir");
+		String opcion = sc.nextLine();
+		return opcion;
+	}
+
+	public static String leerPelicula(String frase, Scanner sc) {
+		System.out.println("Introduzca " + frase);
+		String peli = sc.nextLine();
+		return peli;
+	}
+
+	public static void recorrerLista(ArrayList<PeliculaBean> listaPeliculas) {
+		System.out.println("Esta es la lista de las peliculas elegidas");
+		int i = 1;
+		for (PeliculaBean p : listaPeliculas) {
+			mostrarPeliculas(p, i);
+			i++;
+		}
+	}
+
+	public static void mostrarPeliculas(PeliculaBean p, int i) {
+		System.out.println("La pelicula elegida es:  " + i);
+		System.out.println("Titulo: " + p.getTitulo());
+		System.out.println("Genero: " + p.getGenero());
+		System.out.println("Director: " + p.getDirector);
+		System.out.println("Puntuacion: " + p.getPuntuacion);
+	}
+
+}

@@ -1,0 +1,19 @@
+package Javabean;
+
+public class MainPeliculasBean {
+
+	public static void main(String[] args) {
+		
+		PeliculaBean p1 = new PeliculaBean();
+		p1.setNombre("Julio");
+		p1.setEdad(79);
+		p1.setPeso(86);
+		p1.setEdad(-6);
+		
+		System.out.println(p1.getNombre());
+		System.out.println(p1.getEdad());
+		System.out.println(p1.getPeso());
+
+	}
+
+}

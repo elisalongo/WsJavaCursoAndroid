@@ -1,0 +1,9 @@
+package avion;
+
+public class Pasajero {
+	
+	private String nombre;
+	private String DNI;
+	
+
+}

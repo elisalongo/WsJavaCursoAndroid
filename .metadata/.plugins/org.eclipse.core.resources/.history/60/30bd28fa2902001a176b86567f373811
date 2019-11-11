@@ -1,0 +1,13 @@
+package casa;
+
+import java.util.ArrayList;
+
+public class MainCasa {
+
+	public static void main(String[] args) {
+		// Casa de Alta
+		
+		ArrayList <Habitacion> listaHabitaciones = new ArrayList<Habitacion>();
+	}
+
+}

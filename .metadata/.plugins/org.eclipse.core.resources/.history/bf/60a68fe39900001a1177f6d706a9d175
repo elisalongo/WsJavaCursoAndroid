@@ -1,0 +1,29 @@
+
+public class Coche {
+	
+	public String matricula;
+	public String modelo;
+	public String marca;
+	public boolean nuevo;
+	
+	public Coche() {
+		
+	}
+	
+	public Coche(String matricula, String modelo, String marca, boolean nuevo) {
+		super();
+		this.matricula = matricula;
+		this.modelo = modelo;
+		this.marca = marca;
+		this.nuevo = nuevo;
+	}
+	
+	
+	public Coche(String modelo1, String marca1) {
+		super();
+		this.modelo1 = modelo;
+		this.marca1 = marca;
+	}
+	
+
+}

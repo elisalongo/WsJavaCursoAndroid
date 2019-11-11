@@ -1,0 +1,8 @@
+
+public class Coche {
+	
+	public String matricula;
+	public String modelo;
+	
+
+}

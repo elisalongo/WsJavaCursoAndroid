@@ -1,0 +1,44 @@
+package avion;
+
+import java.util.ArrayList;
+
+public class Pasajero {
+
+	private String nombre;
+	private String DNI;
+	private String telefono;
+	private ArrayList<Maleta> listaMaletas;
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getDNI() {
+		return DNI;
+	}
+
+	public void setDNI(String dNI) {
+		DNI = dNI;
+	}
+
+	public String getTelefono() {
+		return telefono;
+	}
+
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
+
+	public Maleta getMaleta() {
+		return maleta;
+	}
+
+	public void setMaleta(Maleta maleta) {
+		this.maleta = maleta;
+	}
+
+}

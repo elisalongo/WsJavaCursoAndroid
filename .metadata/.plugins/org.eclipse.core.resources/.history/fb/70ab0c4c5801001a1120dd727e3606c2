@@ -1,0 +1,17 @@
+
+public class Peliculas {
+	
+	public String titulo;
+	public String genero;
+	public String director;
+	public int puntuacion;
+	
+	
+	
+	public Persona(String nombre, double peso, int edad) {
+		super();//Java existe la herencia y esto esta invocando al padre de este objeto
+		this.nombre = nombre;//this es una referencia al propio objeto
+		this.peso = peso;
+		this.edad = edad;
+
+}

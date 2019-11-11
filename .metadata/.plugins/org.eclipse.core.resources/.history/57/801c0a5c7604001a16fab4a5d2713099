@@ -1,0 +1,65 @@
+package avion;
+
+import java.util.ArrayList;
+
+public class MainAvion {
+
+	public static void main(String[] args) {
+		
+		Maleta maleta1P1 = new Maleta();
+		maleta1P1.setPeso(10);
+		maleta1P1.setTipoMaleta("pequeña");
+		
+		Maleta maleta2P1 = new Maleta();
+		maleta2P1.setPeso(20);
+		maleta2P1.setTipoMaleta("grande");
+	
+		Pasajero p1 = new Pasajero();
+		p1.setNombre("Felix");
+		p1.setDNI("675858585");
+		p1.setTelefono("883938383");
+		
+		ArrayList<Maleta> listaMaletasP1 = new ArrayList<Maleta>();
+		listaMaletasP1.add(maleta1P1);
+		listaMaletasP1.add(maleta2P1);
+		
+		p1.setListaMaletas(listaMaletasP1);
+		
+		Maleta maleta1P2 = new Maleta();
+		maleta1P2.setPeso(8);
+		maleta1P2.setTipoMaleta("pequeña");
+		
+		Maleta maleta2P2 = new Maleta();
+		maleta2P2.setPeso(23);
+		maleta2P2.setTipoMaleta("grande"); 
+		
+		
+		Pasajero p2 = new Pasajero();
+		p2.setNombre("Martin");
+		p2.setDNI("53801962V");
+		p2.setTelefono("695433282");
+		
+		ArrayList<Maleta> listaMaletasP2 = new ArrayList<Maleta>();
+		listaMaletasP2.add(maleta1P2);
+		listaMaletasP2.add(maleta2P2);
+		
+		
+		
+		
+		
+		ArrayList<Pasajero> listaPasajeros = new ArrayList<Pasajero>();
+		
+			
+		Asiento asiento = new Asiento();
+		asiento.setTipoAsiento("");
+		asiento.setPosicion("");
+		asiento.setFila("");
+		asiento.setPasajero(pasajero);
+		
+		ArrayList <Asiento> listaAsientos = new ArrayList<Asiento>();
+				
+		
+
+	}
+
+}

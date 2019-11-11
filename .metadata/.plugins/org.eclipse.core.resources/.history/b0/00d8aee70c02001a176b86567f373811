@@ -1,0 +1,20 @@
+package Javabean;
+
+public class MainPeliculasBean {
+
+	public static void main(String[] args) {
+		
+		PeliculasBean p1 = new PeliculasBean();
+		p1.setTitulo("La Grande Bellezza");
+		p1.setGenero("Comedia Dramatica");
+		p1.setDirector("Paolo Sorrentino");
+		p1.setPuntuacion(9);
+		
+		System.out.println(p1.getTitulo());
+		System.out.println(p1.getGenero());
+		System.out.println(p1.getDirector());
+		
+
+	}
+
+}

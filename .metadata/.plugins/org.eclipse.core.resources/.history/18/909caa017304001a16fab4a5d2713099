@@ -1,0 +1,14 @@
+package avion;
+
+public class MainAvion {
+
+	public static void main(String[] args) {
+		
+		Avion avion = new Avion();
+		avion.setPasajero("");
+		avion.setMaleta("");
+		avion.setAsiento("");
+
+	}
+
+}

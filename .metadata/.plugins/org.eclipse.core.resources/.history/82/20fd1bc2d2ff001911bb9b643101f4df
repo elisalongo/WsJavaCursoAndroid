@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+public class EjercicioFunciones3 {
+	
+	public static void main(String[] args) {
+		ArrayList<String> listaStrings = new ArrayList<String>();
+		listaStrings.add("Elisa");
+		listaStrings.add("Martin");
+		listaStrings.add("Felix");
+		
+	
+		recorrer(listaStrings);
+		
+	}
+	
+	public static void recorrer(ArrayList<String> lista) {
+		for(String valor : lista) {
+			System.out.println(valor);
+		}
+	}
+	
+
+}

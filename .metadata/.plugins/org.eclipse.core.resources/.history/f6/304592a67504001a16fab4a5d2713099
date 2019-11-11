@@ -1,0 +1,37 @@
+package avion;
+
+import java.util.ArrayList;
+
+public class MainAvion {
+
+	public static void main(String[] args) {
+		
+		Maleta maleta1P1 = new Maleta();
+		maleta1P1.setPeso(10);
+		maleta1P1.setTipoMaleta("pequeña");
+		
+		Maleta maleta2P1 = new Maleta();
+		maleta2P1.setPeso(20);
+		maleta2P1.setTipoMaleta("grande");
+	
+		Pasajero pasajero = new Pasajero();
+		pasajero.setNombre("Felix");
+		pasajero.setDNI("675858585");
+		pasajero.setTelefono("883938383");
+		
+		ArrayList<Pasajero> listaPasajeros = new ArrayList<Pasajero>();
+		
+			
+		Asiento asiento = new Asiento();
+		asiento.setTipoAsiento("");
+		asiento.setPosicion("");
+		asiento.setFila("");
+		asiento.setPasajero(pasajero);
+		
+		ArrayList <Asiento> listaAsientos = new ArrayList<Asiento>();
+				
+		
+
+	}
+
+}

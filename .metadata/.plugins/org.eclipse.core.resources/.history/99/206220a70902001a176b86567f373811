@@ -1,0 +1,7 @@
+package Javabean;
+
+public class PersonaBean {
+	private String nombre;
+	
+
+}

@@ -1,0 +1,8 @@
+package avion;
+
+public class Avion {
+
+	private Pasajero pasajero;
+	private Maleta maleta;
+	private Asiento
+}

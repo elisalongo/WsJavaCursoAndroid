@@ -1,0 +1,28 @@
+package avion;
+
+public class Avion {
+
+	private Pasajero pasajero;
+	private Maleta maleta;
+	private Asiento asiento;
+	public Pasajero getPasajero() {
+		return pasajero;
+	}
+	public void setPasajero(Pasajero pasajero) {
+		this.pasajero = pasajero;
+	}
+	public Maleta getMaleta() {
+		return maleta;
+	}
+	public void setMaleta(Maleta maleta) {
+		this.maleta = maleta;
+	}
+	public Asiento getAsiento() {
+		return asiento;
+	}
+	public void setAsiento(Asiento asiento) {
+		this.asiento = asiento;
+	}
+	
+	
+}

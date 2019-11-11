@@ -1,0 +1,27 @@
+package avion;
+
+public class MainAvion {
+
+	public static void main(String[] args) {
+		
+		Avion avion = new Avion();
+		avion.setPasajero("");
+		avion.setMaleta("");
+		avion.setAsiento("");
+		
+		Pasajero pasajero = new Pasejero();
+		pasajero.setNombre("");
+		pasajero.setDNI("");
+		pasajero.setTelefono("");
+		pasajero.setMaleta("");
+		
+		
+		Asiento asiento = new Asiento();
+		asiento.setTipoAsiento("");
+		asiento.setPosicion("");
+		asiento.setFila("");
+		asiento.setPasajero("");
+
+	}
+
+}

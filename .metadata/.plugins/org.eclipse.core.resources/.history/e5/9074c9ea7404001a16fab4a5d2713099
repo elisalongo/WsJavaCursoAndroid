@@ -1,0 +1,12 @@
+package avion;
+
+import java.util.ArrayList;
+
+public class Pasajero {
+
+	private String nombre;
+	private String DNI;
+	private String telefono;
+	private ArrayList<Maleta> listaMaletas;
+
+}

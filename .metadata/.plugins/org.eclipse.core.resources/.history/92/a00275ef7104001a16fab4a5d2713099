@@ -1,0 +1,8 @@
+package avion;
+
+public class Maleta {
+	
+	private double peso;
+	private String 
+
+}

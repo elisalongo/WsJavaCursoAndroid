@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class MainCoche2 {
+
+	public static void main(String[] args) {
+		// 3 coches pedir marca, modelo, matricula que lo ponga el usuario
+		//costruir array
+		//mostrar el array
+		
+		ArrayList<String> listaCoches = new ArrayList<String>();
+		Scanner sc = new Scanner(System.in);
+		String marca = "";
+		String modelo = "";
+		String matricula = "";
+		
+		
+		System.out.println("Bienvenido a nuestra tienda de coches.");
+		System.out.println();
+		System.out.println("Puedes elegir tres tipos de coches");
+
+		for(int i = 0;i<3;i++) {
+			System.out.println("Introduzca la marca: ");
+			marca = sc.nextLine();
+			listaCoches.add(marca);
+			System.out.println();
+			System.out.println("Introduzca el modelo: ");
+			modelo = sc.nextLine();
+			listaCoches.add(modelo);
+			System.out.println();
+			System.out.println("Introduzca la matricula: ");
+			matricula = sc.nextLine();
+			listaCoches.add(matricula);
+			System.out.println();
+	
+		}
+		
+		for(String valor : listaCoches) {
+			System.out.println(valor);
+		}
+
+
+	}
+
+}

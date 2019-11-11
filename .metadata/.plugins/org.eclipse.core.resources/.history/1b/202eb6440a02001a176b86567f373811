@@ -1,0 +1,9 @@
+package Javabean;
+
+public class MainPersonaBean {
+	public static void main(String[] args) {
+		PersonaBean p1 = new PersonaBean();
+		p1.setNombre("Julio");
+		
+	}
+}

@@ -1,0 +1,12 @@
+package casa;
+
+public class Casa {
+	//portal inmobiliar
+	//precio ->double
+	//direccion ->Direccion
+	// numeros habitaciones -> 3 -> String tipoHabitacion; double m2;
+	// Arraylis<Habitacion> listaHabitaciones;
+	// tiene un? -> atributo Habitacion
+	//Persona dueño
+
+}

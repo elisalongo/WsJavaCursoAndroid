@@ -1,0 +1,10 @@
+package Javabean;
+
+public class MainPeliculasBean {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

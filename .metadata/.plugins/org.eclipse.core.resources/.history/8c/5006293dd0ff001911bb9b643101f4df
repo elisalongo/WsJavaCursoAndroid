@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class EjercicioFunciones3 {
+	
+	public static void main(String[] args) {
+		ArrayList<String> listaStrings = new ArrayList<String>();
+	}
+	
+	public static void Parametros() {
+		
+	}
+	
+
+}

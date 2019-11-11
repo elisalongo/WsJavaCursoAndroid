@@ -1,0 +1,30 @@
+package avion;
+
+import java.util.ArrayList;
+
+public class Avion {
+
+	private ArrayList<Pasajero> listaPasajeros;
+	private ArrayList<Asiento> listaAsiento;
+	private String tipoAvion;
+
+	public ArrayList<Pasajero> getListaPasajeros() {
+		return listaPasajeros;
+	}
+
+	public void setListaPasajeros(ArrayList<Pasajero> listaPasajeros) {
+		this.listaPasajeros = listaPasajeros;
+	}
+
+	public String getTipoAvion() {
+		return tipoAvion;
+	}
+
+	public void setTipoAvion(String tipoAvion) {
+		this.tipoAvion = tipoAvion;
+	}
+
+	
+
+
+}

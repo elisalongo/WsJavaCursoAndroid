@@ -1,0 +1,77 @@
+
+public class MainCoche {
+
+	public static void main(String[] args) {
+
+		System.out.println("Bienvenidos a nuestra tienda de coches");
+		System.out.println();
+
+		Coche c1 = new Coche();
+		c1.marca = "Fiat";
+		c1.modelo = "500";
+		c1.matricula = "AY45996";
+		c1.nuevo = true;
+
+		System.out.println("Aquí presentamos el primer coche: ");
+		System.out.println("La marca es: " + c1.marca);
+		System.out.println("El modelo es: " + c1.modelo);
+		System.out.println("La matricula es: " + c1.matricula);
+		System.out.println("La versión es nueva: " + c1.nuevo);
+		System.out.println();
+
+		Coche c2 = new Coche();
+		c2.marca = "Lamborghini";
+		c2.modelo = "Urus";
+		c2.matricula = "ER929NG";
+		c2.nuevo = false;
+
+		System.out.println("Aquí presentamos el segundo coche: ");
+		System.out.println("La marca es: " + c2.marca);
+		System.out.println("El modelo es: " + c2.modelo);
+		System.out.println("La matricula es: " + c2.matricula);
+		System.out.println("La versión es nueva: " + c2.nuevo);
+		System.out.println();
+
+		Coche c3 = new Coche();
+		c3.marca = "Ferrari";
+		c3.modelo = "Purosangue";
+		c3.matricula = "DY937PG";
+		c3.nuevo = true;
+
+		System.out.println("Aquí presentamos el tercer coche: ");
+		System.out.println("La marca es: " + c3.marca);
+		System.out.println("El modelo es: " + c3.modelo);
+		System.out.println("La matricula es: " + c3.matricula);
+		System.out.println("La versión es nueva: " + c3.nuevo);
+		System.out.println();
+
+		System.out.println("Aquí presentamos el primer coche: ");
+		imprimirCoche(c1);
+		System.out.println();
+		System.out.println("Aquí presentamos el segundo coche: ");
+		imprimirCoche(c2);
+		System.out.println();
+		System.out.println("Aquí presentamos el tercer coche: ");
+		imprimirCoche(c3);
+		System.out.println();
+		
+		
+
+		Coche c1 = new Coche("500","Fiat");
+		System.out.println();
+		Coche c2 = new Coche("Urus","Lamborghini");
+		System.out.println();
+		Coche c3 = new Coche("Purosangue","Ferrari");
+		
+		System.out.println("Gracias por visitar nuestra tienda :)");
+		
+	}
+
+	public static void imprimirCoche(Coche coche) {
+		System.out.println("La marca es: " + coche.marca);
+		System.out.println("El modelo es: " + coche.modelo);
+		System.out.println("La matricula es: " + coche.matricula);
+		System.out.println("La versión es nueva: " + coche.nuevo);
+	}
+
+}

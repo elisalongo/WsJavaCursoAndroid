@@ -1,0 +1,18 @@
+
+public class Peliculas {
+	
+	public String titulo;
+	public String genero;
+	public String director;
+	public int puntuacion;
+	
+	
+	
+	public Peliculas(String titulo, String genero, String director) {
+		super();
+		this.titulo = titulo;
+		this.genero = genero;
+		this.director = director;
+	}
+
+}

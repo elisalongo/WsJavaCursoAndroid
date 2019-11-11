@@ -1,0 +1,12 @@
+package avion;
+
+public class Asiento {
+	
+	private String tipoAsiento;
+	private String posicion;
+	private String fila;
+	private Pasajero pasajero;
+	
+	
+
+}

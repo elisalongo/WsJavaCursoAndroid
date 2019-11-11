@@ -1,0 +1,74 @@
+package casa;
+
+import java.util.ArrayList;
+
+import entidad.Direccion;
+import entidad.Persona;
+
+public class MainCasa {
+
+	public static void main(String[] args) {
+	
+		// Casa de Alta
+		
+		Direccion d = new Direccion();
+		d.setTipoVia("Calle");
+		d.setNombreVia("SerrannO");
+		d.setNumeroVia("56");
+		d.setCp("28003");
+		d.setCiudad("Madrid");
+		
+		Persona p = new Persona();
+		p.setNombre("Pablo");
+		p.setEdad(33);
+		p.setPeso(67.8);
+		p.setDireccion(d);
+		
+		
+		Habitacion h = new Habitacion();
+		h.setTipoHabitacion("Baño");
+		h.setM2(10);
+		
+		ArrayList <Habitacion> listaHabitaciones = new ArrayList<Habitacion>();
+		listaHabitaciones.add(h);
+		listaHabitaciones.add("Cocina");
+		listaHabitaciones.add("Habitacion1");
+		listaHabitaciones.add("Habitacion2");
+
+		
+		
+		Casa casa = new Casa();
+		casa.setDireccion(d);
+		casa.setListaHabitacions(h);
+		casa.setPersona(p);
+		casa.setPrecio(250.000);
+		
+		
+		
+		
+		
+		System.out.println(casa.setDireccion(d));
+		System.out.println(casa.setListaHabitacions(listaHabitaciones));
+		System.out.println(casa.setPersona(p));
+		System.out.println(casa.getPrecio());
+		
+		
+		
+	}
+	
+	public static void reccorrerArray(ArrayList<Habitacion> listaHabitaciones) {
+		System.out.println("Mostrando la lista de las habitaciones");
+		int i = 1;
+		for(Habitacion h : listaHabitaciones) {
+			mostrarHabitaciones(h,i);
+			i++;
+		}
+		
+		public static void mostrarHabitaciones(Habitacion h, int i) {
+			System.out.println("Mostrando habitacion " + i);
+			System.out.println(h.baño);
+			System.out.println(h.cocina);
+			System.out.println(h.habitacion1);
+			System.out.println(h.habitacion2);
+
+}

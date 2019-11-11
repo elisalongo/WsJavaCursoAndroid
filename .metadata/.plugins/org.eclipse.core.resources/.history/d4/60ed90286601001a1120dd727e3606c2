@@ -1,0 +1,91 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class MainPeliculas {
+
+	public static void main(String[] args) {
+		// quiero pelicula con: titulo,genero, director y optativo puntuación
+		/*
+		 * mostrar menu: 1.Alta Pelicula 2. Listar Peliculas -> mostrar las peliculas 0.
+		 * Salir del programa
+		 */
+
+		/*
+		 * Peliculas peli1 = new Peliculas(); peli1.titulo = "La grande bellezza";
+		 * peli1.genero = "Comedia dramatica"; peli1.director = "Paolo Sorrentino";
+		 * 
+		 * Peliculas peli2 = new Peliculas(); peli2.titulo = "La vita è bella";
+		 * peli2.genero = "Comedia dramatica"; peli2.director = "Roberto Benigni";
+		 * 
+		 * Peliculas peli3 = new Peliculas(); peli3.titulo = "Amarcord"; peli3.genero =
+		 * "Comedia dramatica"; peli3.director = "Federico Fellini";
+		 */
+
+		ArrayList<Pelicula> listaPeliculas = new ArrayList<Pelicula>();
+		Scanner sc = new Scanner(System.in);
+		String opcion = "";
+		String titulo = "";
+		String genero = "";
+		String director = "";
+		double puntuacion = 0;
+
+		do {
+			System.out.println();
+			opcion = mostrarMenu();
+			opcion = sc.nextLine();
+			if (opcion.equals("1")) {
+				System.out.println();
+				titulo = leerPelicula("Titulo: ");
+				genero = leerPelicula("Genero: ");
+				director = leerPelicula("Director: ");
+				String sPuntuacion = leerPelicula("Puntuacion: ");
+				puntuacion = Double.parseDouble(sPuntuacion);
+				System.out.println();
+
+				Pelicula peli = new Pelicula(titulo, genero, director, puntuacion);
+				listaPeliculas.add(peli);
+				System.out.println();
+
+			} else if (opcion.equals("2")) {
+				System.out.println();
+				recorrerLista(listaPeliculas);
+			}
+		} while (!opcion.equals("0"));
+		System.out.println();
+
+		System.out.println("Muchas gracias por visitar nuestra Web de Peliculas");
+
+	}
+
+	public static int mostrarMenu() {
+		System.out.println("Menu:");
+		System.out.println("1. Alta Pelicula");
+		System.out.println("2. Listar Peliculas");
+		System.out.println("0. Salir");
+	}
+
+	public static String leerPelicula(String frase) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Introduzca " + frase);
+		String peli = sc.nextLine();
+		return peli;
+	}
+
+	public static void recorrerLista(ArrayList<Pelicula> listaPeliculas) {
+		System.out.println("Esta es la lista de las peliculas elegidas");
+		int i = 1;
+		for (Pelicula p : listaPeliculas) {
+			mostrarPeliculas(p, i);
+			i++;
+		}
+	}
+
+	public static void mostrarPeliculas(Pelicula p, int i) {
+		System.out.println("La pelicula elegida es:  " + i);
+		System.out.println("Titulo: " + p.titulo);
+		System.out.println("Genero: " + p.genero);
+		System.out.println("Director: " + p.director);
+		System.out.println("Puntuacion: " + p.puntuacion);
+	}
+
+}

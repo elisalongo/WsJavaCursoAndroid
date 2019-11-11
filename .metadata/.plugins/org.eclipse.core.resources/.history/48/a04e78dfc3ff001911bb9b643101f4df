@@ -1,0 +1,20 @@
+
+public class EjercicioFunciones1 {
+	
+	public static void main(String[] args) {
+		System.out.println("Inicio del programa");
+		imprimirPersona("Elisa","Longo",24,"667257295");
+		imprimirPersona("Felix","De Pablo", 40,"6658941459");
+		imprimirPersona("Martin","Perez",18,"695463282");
+		imprimirPersona("Jorge","Rodriguez",35,"692455663");
+	}
+	
+	public static void imprimirPersona(String nombre, String apellidos, int edad, String telefono) {
+		System.out.println("nombre: " + nombre.toUpperCase());
+		System.out.println("apellidos: " + apellidos.toUpperCase());
+		System.out.println("edad: " + edad);
+		System.out.println("telefono: " + telefono);
+		
+	}
+
+}

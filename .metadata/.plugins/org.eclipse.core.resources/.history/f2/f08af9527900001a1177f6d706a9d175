@@ -1,0 +1,6 @@
+
+//Las clases en java son moldes para la creación de objetos, son pianos
+//en los que java se va a basar para la creacion de los objetos
+public class Persona {
+}
+

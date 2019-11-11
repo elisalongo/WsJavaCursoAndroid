@@ -1,0 +1,21 @@
+package entidad;
+
+public class MainPersona {
+
+	public static void main(String[] args) {
+		
+		Persona p = new Persona();
+		p.setNombre("Juan");
+		p.setEdad(33);
+		p.setPeso(67.8);
+		/*
+		p.setDireccion("Calle Serrano,4 cp 28003");
+		
+		System.out.println(p.getDireccion());
+		String cp = p.getDireccion().substring(p.getDireccion().length() -5, p.getDireccion().length());
+		System.out.println(cp);
+		*/
+		
+	}
+
+}

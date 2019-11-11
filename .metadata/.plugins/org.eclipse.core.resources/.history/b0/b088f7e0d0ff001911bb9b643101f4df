@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+public class EjercicioFunciones3 {
+	
+	public static void main(String[] args) {
+		ArrayList<String> listaStrings = new ArrayList<String>();
+		listaStrings.add("Elisa", 24);
+		listaStrings.add("Martin", 18);
+		
+	
+		
+		
+	}
+	
+	public static void recorrer() {
+		System.out.println("El nombre es: " + nombre);
+		System.out.println("La edad es: " + edad);
+	}
+	
+
+}

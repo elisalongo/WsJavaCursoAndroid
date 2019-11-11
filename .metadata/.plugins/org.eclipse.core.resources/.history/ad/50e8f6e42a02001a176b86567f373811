@@ -1,0 +1,47 @@
+package casa;
+
+import java.util.ArrayList;
+
+import entidad.Direccion;
+import entidad.Persona;
+
+public class MainCasa {
+
+	public static void main(String[] args) {
+		// Casa de Alta
+		
+		Direccion d = new Direccion();
+		d.setTipoVia("Calle");
+		d.setNombreVia("SerrannO");
+		d.setNumeroVia("56");
+		d.setCp("28003");
+		d.setCiudad("Madrid");
+		
+		Persona p = new Persona();
+		p.setNombre("Pablo");
+		p.setEdad(33);
+		p.setPeso(67.8);
+		
+		
+		Habitacion h = new Habitacion();
+		h.setTipoHabitacion("Baño");
+		h.setM2(10);
+		
+		
+		Casa casa = new Casa();
+		casa.setDireccion(d);
+		casa.setListaHabitacions(h);
+		casa.setPersona(p);
+		casa.getPrecio(250.000);
+		
+		
+		
+		
+		
+		System.out.println(casa.setDireccion(d));
+		System.out.println(casa.);
+		
+		ArrayList <Habitacion> listaHabitaciones = new ArrayList<Habitacion>();
+	}
+
+}
